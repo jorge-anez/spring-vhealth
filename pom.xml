@@ -4,7 +4,7 @@
     <groupId>com.vhealth</groupId>
     <artifactId>spring-vhealth</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <name>vhealth</name>
 
     <parent>
@@ -43,6 +43,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-remote-shell</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -73,7 +77,7 @@
     </dependencies>
 
     <build>
-        <finalName>spring-boot</finalName>
+        <finalName>spring-health</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
